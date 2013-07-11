@@ -4,10 +4,11 @@ var app = express.createServer(express.logger());
 
 console.log("jaklsdfjklsdafjladfa");
 
-//fs.readFile('index.html', function (err, data) {
-//  if (err) throw err;
-//  console.log(data);
-//});
+var fs = require('fs');
+fs.readFile('index.html', function (err, data) {
+  if (err) throw err;
+  console.log(data);
+});
 
 app.get('/', function(request, response) {
   response.send('Hello World 2!');
