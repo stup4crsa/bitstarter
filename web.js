@@ -8,7 +8,12 @@ var fs = require('fs');
 fs.readFile('index.html', function (err, data) {
   if (err) throw err;
 //console.log(data);
-  response.send(data);
+//response.send(data);
+});
+
+fs.writeFile('message.txt', 'Hello Node', function (err) {
+  if (err) throw err;
+  console.log('It\'s saved!');
 });
 
 app.get('/', function(request, response) {

@@ -7,12 +7,12 @@ console.log("jaklsdfjklsdafjladfa");
 var fs = require('fs');
 fs.readFile('index.html', function (err, data) {
   if (err) throw err;
-  console.log(data);
+//console.log(data);
+  response.send(data);
 });
 
 app.get('/', function(request, response) {
   //response.send('Hello World 2!');
-  response.send(data);
 });
 
 var port = process.env.PORT || 5000;
