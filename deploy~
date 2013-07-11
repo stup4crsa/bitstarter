@@ -1,0 +1,1 @@
+git add . & git commit -m "mod web.js" & git push heroku master & read Press... && lynx $HKU
