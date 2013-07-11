@@ -11,13 +11,14 @@ fs.readFile('index.html', function (err, data) {
 //response.send(data);
 });
 
+app.get('/', function(request, response) {
+  response.send('Hello World 2!');
+
 fs.writeFile('message.txt', 'Hello Node', function (err) {
   if (err) throw err;
   console.log('It\'s saved!');
 });
 
-app.get('/', function(request, response) {
-  response.send('Hello World 2!');
 });
 
 var port = process.env.PORT || 5000;
