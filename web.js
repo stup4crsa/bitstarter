@@ -7,7 +7,7 @@ console.log("jaklsdfjklsdafjladfa");
 var fs = require('fs');
 
 app.get('/', function(request, response) {
-  response.send('Hello World 2!');
+//  response.send('Hello World 2!');
 
   fs.readFile('index.html', function (err, data) {
     if (err) throw err;
