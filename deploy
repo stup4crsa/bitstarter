@@ -1,4 +1,3 @@
-touch A~
 git rm *~
 git add . 
 git commit -m "mod web.js"
